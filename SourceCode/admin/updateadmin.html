@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+<title>爱问100用户密码修改中心!</title>
+
+ 
+<SCRIPT>
+<!--
+
+function check()
+{
+	if(document.frmLogin.User.value=="")
+	{
+		alert("请输入用户名！");
+		document.frmLogin.User.focus();
+		return false
+	}
+	if(document.frmLogin.User.value.length < 6)
+	{
+		alert("用户名位数为6位以上！");
+		document.frmLogin.User.focus();
+		return false
+	}
+	if (document.frmLogin.User.value.length > 10)
+		{
+			alert("对不起，用户帐号不能多于10位");
+			document.frmLogin.User.focus();
+			return false;
+		}
+	if(/[^a-zA-Z0-9_]/g.test(document.frmLogin.User.value) || /[^a-zA-Z]/g.test(document.frmLogin.User.value.substr(0,1)))
+	{
+		alert("用户名只能用数字或英文,并且必须为英文字母开头!");
+		document.User.focus();
+		return false;
+	}
+	
+	
+	if(document.frmLogin.questionid.value=="")
+	{
+		alert("请选择问题？");
+		document.frmLogin.questionid.focus();
+		return false
+	}
+	if(document.frmLogin.da.value=="")
+	{
+		alert("请输入答案？");
+		document.frmLogin.da.focus();
+		return false
+	}if(document.frmLogin.oldPass.value=="")
+	{
+		alert("请输入旧密码！");
+		document.frmLogin.oldPass.focus();
+		return false
+	}
+	if(document.frmLogin.oldPass.value.length < 6)
+	{
+		alert("用户原密码位数应为6位以上！");
+		document.frmLogin.oldPass.focus();
+		return false
+	}
+	
+		if(document.frmLogin.newPass.value=="")
+	{
+		alert("请输入新密码！");
+		document.frmLogin.newPass.focus();
+		return false
+	}
+	if(document.frmLogin.newPass.value.length < 6)
+	{
+		alert("用户新密码位数应为6位以上！");
+		document.frmLogin.newPass.focus();
+		return false
+	}
+	if (document.frmLogin.newPass.value.length > 10)
+		{
+			alert("对不起，用户密码不能多于10位");
+			document.frmLogin.newPass.focus();
+			return false;
+		}
+	//document.frmLogin.submit();
+	return true;
+}
+
+function check_username()
+{
+	document.frmLogin.UserNm.value = document.frmLogin.UserNm.value.replace(/\s/g,"");
+}
+
+function MM_callJS(jsStr) { //v2.0
+  return eval(jsStr)
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.btn {	PADDING-RIGHT: 2px;
+	PADDING-LEFT: 2px;
+	FONT-SIZE: 12px;
+FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#FFFFFF, EndColorStr=#9DBCEA); 	PADDING-BOTTOM: 0px;
+	CURSOR: hand;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BACKGROUND-COLOR: #bfefff;
+	border: 1px solid #C3EABB;
+}
+.input {BORDER-RIGHT: #8dafd3 1px solid; BORDER-TOP: #8dafd3 1px solid; BORDER-LEFT: #8dafd3 1px solid; WIDTH: 100px; BORDER-BOTTOM: #8dafd3 1px solid; HEIGHT: 17px
+}
+.tjj {WIDTH: 70px}
+a:visited {
+	text-decoration: none;
+}
+.yh {FONT-SIZE: 14px; HEIGHT: 30px
+}
+a:link {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+.zhuce {	color: black;
+	background-color: #BFEFFF;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+	border: 1px solid #BCE7B1;
+	cursor: hand;
+	width: 50px;
+	font-size: 12px;
+}
+.logi {
+	border: 2px solid #FFCCCC;
+	font-size: 12px;
+	color: #0000FF;
+	height: auto;
+	width: 206px;
+}
+-->
+</style>
+
+<style type="text/css">
+<!--
+body {
+	background-color: #FFFFFF;
+}
+#Layer4 {position:absolute;
+	width:318px;
+	height:22px;
+	z-index:1;
+	left: 622px;
+	top: 25px;
+	visibility: visible;
+}
+#Layer5 {position:absolute;
+	width:56px;
+	height:68px;
+	z-index:2;
+	left: 502px;
+	top: 10px;
+}
+body,td,th {
+	font-size: 12px;
+}
+.blue {font-size: 12px;
+	border: 1px solid #FFCCCC;
+}
+.image {height: 18px;
+	width: 80px;
+}
+.input1 {BORDER-RIGHT: #8dafd3 1px solid;
+	BORDER-TOP: #8dafd3 1px solid;
+	BORDER-LEFT: #8dafd3 1px solid;
+	WIDTH: 100px;
+	BORDER-BOTTOM: #8dafd3 1px solid;
+	HEIGHT: 17px;
+	font-size: 12px;
+	color: #0033FF;
+	background-color: #FFFFFF;
+}
+.STYLE55 {color: #FFFFFF}
+.STYLE56 {color: #CC00CC}
+.STYLE57 {color: #F5FDFF; }
+.tableguid {
+	width: 945px;
+	text-decoration: none;
+}
+.STYLE59 {color: #F7F7F7}
+.STYLE60 {color: #333333; }
+.STYLE60 {color: #CCCCCC}
+.STYLE61 {color: #666666; }
+-->
+</style>
+</head>
+
+<body>
+<div align="center">
+  <table width="667" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" class="tabl">
+    <tbody>
+      <tr>
+        <td width="667" height="10"></td>
+      </tr>
+      <tr>
+        <td height="13" bgcolor="#64ADF8"></td>
+      </tr>
+      <tr>
+        <td align="middle">
+            <form action="updateadmindo.jsp" 
+      method="post" name="frmLogin" id="frmLogin" onsubmit="return check()">
+              <table style="BORDER-COLLAPSE: collapse" bordercolor="#FAC2DD" cellspacing="0" 
+      cellpadding="3" width="666" bgcolor="#FFFFFF">
+                <tbody>
+                  
+                  <tr>
+                    <td align="right" width="11%">&nbsp;</td>
+                    <td width="35%">&nbsp;</td>
+                  </tr>
+                  
+                  <tr class="blue" background="../../image/bg_web_a.jpg">
+                    <td height="53"><div align="right">新 &nbsp;密 码:</div></td>
+                    <td colspan="3"><div align="left"><span class="yh">
+                      <input 
+name="pass" type="password" class="image" id="pass" />
+                      <font 
+            color="#ff0000">＊必填</font></span> </div>                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p align="center"><input  type="submit" value="修改" name="Submit" />
+              </p>
+          </form></td>
+      </tr>
+      <tr>
+        <td align="middle" height="25">　 
+          <table width="668" height="15">
+            <tr>
+              <td height="9" bgcolor="#66AFF9"></td>
+            </tr>
+          </table></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>&nbsp;</p>
+</body>
+</html>
+
