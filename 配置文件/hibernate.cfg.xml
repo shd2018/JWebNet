@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+	<hibernate-configuration>
+	
+	  <session-factory>
+	  
+	       
+		<!-- 数据库方言
+			注意: MYSQL在选择方言时,请选择最短的方言.
+		 -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		
+		
+		<!-- 将hibernate生成的sql语句打印到控制台 -->
+		<property name="hibernate.show_sql">true</property>
+		<!-- 将hibernate生成的sql语句格式化(语法缩进) -->
+		<property name="hibernate.format_sql">true</property>
+		<!-- 
+		自动导出表结构. 自动建表
+		 -->
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		 <!-- 引入实体配置文件 -->
+		<mapping resource="guanxin/untily/User.hbm.xml" />
+	    <mapping resource="guanxin/untily/Customer.hbm.xml"/>
+	    <mapping resource="guanxin/untily/BaseDict.hbm.xml"/>
+	    <mapping resource="guanxin/untily/LinkMan.hbm.xml"/>
+	    <mapping resource="guanxin/untily/SaleVisit.hbm.xml"/>
+	 </session-factory>
+	
+	
+	</hibernate-configuration>
